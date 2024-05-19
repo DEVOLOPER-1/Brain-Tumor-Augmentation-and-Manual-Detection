@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project involves processing a dataset of grayscale brain tumor images to create augmented data samples and generate masks for tumor detection. The tasks are performed using Google Colab and include various data augmentation techniques, mask creation, and image segmentation.
+This project involves processing a dataset of grayscale brain tumour images to create augmented data samples and generate masks for tumour detection. The tasks are performed using Google Colab and include various data augmentation techniques, mask creation, and image segmentation.
 
 ## Dataset
 - Download the dataset and upload it to Google Colab.
@@ -28,18 +28,18 @@ Due to the small dataset size, augmentation techniques are used to create more s
 
 ## Mask Creation
 - Use the `inRange` function to create masks from the dataset images.
-- Determine the appropriate upper and lower range values to label the tumor using a color picker.
-- Multiply each image by its mask to segment the tumor and plot the result.
+- Determine the appropriate upper and lower range values to label the tumour using a colour picker.
+- Multiply each image by its mask to segment the tumour and plot the result.
 
 ## Tumor Localization
-- Iterate over each mask to find the indices needed to crop the tumor part:
+- Iterate over each mask to find the indices needed to crop the tumour part:
   - Find four indices for each tumor `[row_start : row_end, column_start : column_end]`.
   - Note: Do not use `cv2.contour` or any similar function.
 
 ## X-Y Pair Creation
 - Create two numpy arrays, `X` and `Y`:
   - `X` contains the dataset images.
-  - `Y` contains the masks created for tumors.
+  - `Y` contains the masks created for tumours.
   - `X` shape: `(num_of_images, height, width)`
   - `Y` shape: `(num_of_images, height, width)`
 
@@ -56,7 +56,7 @@ Due to the small dataset size, augmentation techniques are used to create more s
 3. Execute each section of the notebook sequentially to replicate the results.
 
 ## Results
-The processed images and masks can be visualized within the Colab notebook. The results include augmented images, segmented tumors, and localized tumor regions.
+The processed images and masks can be visualized within the Colab notebook. The results include augmented images, segmented tumors, and localized tumour regions.
 
 ## Contributing
 Contributions are welcome! Please create a pull request with a detailed description of your changes.
