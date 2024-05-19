@@ -1,4 +1,4 @@
-# Brain Tumor Detection Project
+# Brain Tumor Detection and Augmentation Project
 
 ## Overview
 
